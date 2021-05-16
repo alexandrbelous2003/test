@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-confirmation-required',
+  selector: 'air-confirmation-required',
   templateUrl: './confirmation-required.component.html',
   styleUrls: ['./confirmation-required.component.scss']
 })

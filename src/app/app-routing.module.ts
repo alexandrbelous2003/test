@@ -1,7 +1,29 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, ExtraOptions } from '@angular/router';
 
-const routes: Routes = [];
+const config: ExtraOptions = {
+  useHash: false,
+  enableTracing: false,
+  scrollPositionRestoration: 'enabled',
+};
+
+const routes: Routes = [
+  {
+    path: '',
+    redirectTo: 'air/authentication/sign-in',
+    pathMatch: 'full'
+  },
+  {
+    path: 'air',
+    children: [
+      {
+        path: 'authentication',
+        loadChildren: () => import('./authentication/authentication.module')
+          .then(m => m.AuthenticationModule)
+      },
+    ]
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-
+import { SignInComponent } from '@air-authentication/sign-in/sign-in.component';
+import { ForgotPasswordComponent } from '@air-authentication/forgot-password/forgot-password.component';
+import { ResetPasswordComponent } from '@air-authentication/reset-password/reset-password.component';
+import { SignUpComponent } from '@air-authentication/sign-up/sign-up.component';
 
 @NgModule({
   imports: [
@@ -25,6 +28,6 @@ import { RouterModule } from '@angular/router';
     ]),
   ],
   exports: [RouterModule],
-  providers: [LoginGuardService],
+  providers: [],
 })
 export class AuthenticationRoutingModule {}
