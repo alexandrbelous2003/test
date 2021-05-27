@@ -1,0 +1,98 @@
+{
+  "root": true,
+  "ignorePatterns": ["projects/**/*"],
+  "extends": ["eslint:recommended"],
+  "overrides": [
+    {
+      "files": ["*.ts"],
+      "parserOptions": {
+        "project": ["tsconfig.json", "e2e/tsconfig.json"],
+        "createDefaultProgram": true
+      },
+      "extends": [
+        "plugin:@angular-eslint/template/process-inline-templates",
+        "plugin:@angular-eslint/recommended",
+        "plugin:@typescript-eslint/recommended"
+      ],
+      "rules": {
+        "indent": ["error", 2, { "SwitchCase": 1 }],
+        "no-trailing-spaces": "error",
+        "no-unused-vars": "off",
+        "no-undef": "off",
+        "require-atomic-updates": "off",
+        "object-curly-spacing": [
+          "error",
+          "always",
+          {
+            "objectsInObjects": false
+          }
+        ],
+        "no-restricted-syntax": [
+          "error",
+          {
+            "selector": "CallExpression[callee.object.name='console'][callee.property.name!=/^(warn|error|info|trace)$/]",
+            "message": "Unexpected property on console object was called"
+          }
+        ],
+        "@typescript-eslint/no-empty-function": ["error", { "allow": ["constructors"] }],
+        "@typescript-eslint/explicit-function-return-type": "error",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/naming-convention": [
+          "error",
+          { "selector": "enum", "format": ["PascalCase"] }
+        ],
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "type": "element",
+            "prefix": "air",
+            "style": "kebab-case"
+          }
+        ],
+        "@angular-eslint/directive-selector": [
+          "error",
+          {
+            "type": "attribute",
+            "prefix": "pmc",
+            "style": "camelCase"
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*-routing.module.ts"],
+      "rules": {
+        "@typescript-eslint/explicit-function-return-type": "off"
+      }
+    },
+    {
+      "files": ["*.html"],
+      "extends": ["plugin:@angular-eslint/template/recommended"],
+      "rules": {
+        "@angular-eslint/template/no-negated-async": "off"
+      }
+    },
+    {
+      "files": ["*.spec.ts"],
+      "extends": ["plugin:jasmine/recommended"],
+      "plugins": ["jasmine", "protractor"],
+      "env": { "jasmine": true }
+    },
+    {
+      "files": ["*.e2e-spec.ts"],
+      "extends": "plugin:protractor/recommended",
+      "plugins": ["jasmine", "protractor"],
+      "env": { "jasmine": true }
+    }
+  ],
+  "rules": {
+    "block-scoped-var": "error",
+    "eqeqeq": "error",
+    "no-var": "error",
+    "prefer-const": "error",
+    "eol-last": "error",
+    "prefer-arrow-callback": "error",
+    "quotes": ["error", "single", { "avoidEscape": true }],
+    "max-lines": ["warn", 400]
+  }
+}

@@ -11,17 +11,17 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
 @NgModule({
 
   declarations: [
-      ForgotPasswordComponent,
-      ResetPasswordComponent,    
-      SignInComponent,
-      SignUpComponent
+    ForgotPasswordComponent,
+    ResetPasswordComponent,
+    SignInComponent,
+    SignUpComponent
   ],
   imports: [
     FlexLayoutModule,
     CommonModule,
     AuthenticationRoutingModule,
     AuthenticationMaterialModule
-    
+
   ]
 })
 export class AuthenticationModule {}
