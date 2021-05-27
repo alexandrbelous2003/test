@@ -1,5 +1,8 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
+/project-icons.html
+.gitlab-ci.yml
+
 # compiled output
 /dist
 /tmp
@@ -40,7 +43,9 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
+debug.log
 
 # System Files
 .DS_Store
 Thumbs.db
+/proxy/my.localhost.config.json
