@@ -12,33 +12,52 @@
           <div class="flex-menu-account-link">Dont have account?</div>
           <a class="flex-menu-account-link-href" href="/sign-up">Sign up</a>
         </div>
+       
         <div class="mat-form">
-          <mat-form-field appearance="fill">
-            <mat-label>Fill form field</mat-label>
+         
+          <span class="mat-form-em" >Email address</span>
+          <mat-form-field appearance="outline">
+            <mat-label>Login</mat-label>
             <input matInput placeholder="Placeholder">
-            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
           </mat-form-field>
 
-          <mat-form-field appearance="fill">
-            <mat-label>Fill form field</mat-label>
+          <span class="mat-form-em">Password</span>
+          <mat-form-field appearance="outline">
+            <mat-label>Password</mat-label>
             <input matInput placeholder="Placeholder">
-            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-             
           </mat-form-field>
-          <div class="inline-flex items-end justify-between w-full mt-1.5 ng-tns-c270-34">
-            <span class="mat-checkbox-label"><span style="display: none;">&nbsp;</span> Remember me </span>
-            <a class="text-md font-medium text-primary-500 hover:underline ng-tns-c270-34" href="/forgot-password">Forgot password? </a></div>
+          
+          <section class="example-section">
+            <mat-checkbox class="example-margin">Remember me</mat-checkbox>
+            <a class="section-hr" href="">Forgot password? </a>
+          </section>
+        <button mat-raised-button class="sign-in-button"  color="primary">Sign in</button>
+        <hr class="hr-s">
+        <div fxLayout fxLayoutAlign="space-between center">
+          <button mat-stroked-button class="button-icon">
+            <mat-icon
+              style='color: red'
+              svgIcon='facebook'
+            >
+              
+            </mat-icon>
+          </button>
+          <button mat-stroked-button class="button-icon">
+            <mat-icon
+            style='color: red'
+            svgIcon='twitter'
+          >
+            
+          </mat-icon>
+          </button>
+          <button mat-stroked-button class="button-icon">  <mat-icon
+            style='color: red'
+            svgIcon='github'
+          >
+            
+          </mat-icon>
+        </button>
         </div>
-        <button mat-raised-button color="primary">Primary</button>
-        <br>
-        <div class="flex items-center mt-8 space-x-4 ng-tns-c270-34"><button type="button" mat-stroked-button="" class="mat-focus-indicator flex-auto ng-tns-c270-34 mat-stroked-button mat-button-base"><span class="mat-button-wrapper"><mat-icon role="img" class="mat-icon notranslate icon-size-5 mat-icon-no-color" aria-hidden="true" data-mat-icon-type="svg" data-mat-icon-name="facebook" data-mat-icon-namespace="feather"><svg x="48" y="192" viewBox="0 0 24 24" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
-          <path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1v0h3z"></path>
-      </svg></mat-icon></span><span matripple="" class="mat-ripple mat-button-ripple"></span><span class="mat-button-focus-overlay"></span></button><button type="button" mat-stroked-button="" class="mat-focus-indicator flex-auto ng-tns-c270-34 mat-stroked-button mat-button-base"><span class="mat-button-wrapper"><mat-icon role="img" class="mat-icon notranslate icon-size-5 mat-icon-no-color" aria-hidden="true" data-mat-icon-type="svg" data-mat-icon-name="twitter" data-mat-icon-namespace="feather"><svg x="432" y="480" viewBox="0 0 24 24" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
-          <path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" d="M23 3c-.9.642-1.943 1.164-3.063 1.509l-.077.021A4.48 4.48 0 0012 7.47v.063-.003 1a10.646 10.646 0 01-8.977-4.496l-.022-.033s-4 9 5 13A11.54 11.54 0 01.978 19l.023.001c9 5 20 0 20-11.5a4.5 4.5 0 00-.085-.859l.005.029a7.717 7.717 0 002.069-3.617l.011-.053z"></path>
-      </svg></mat-icon></span><span matripple="" class="mat-ripple mat-button-ripple"></span><span class="mat-button-focus-overlay"></span></button><button type="button" mat-stroked-button="" class="mat-focus-indicator flex-auto ng-tns-c270-34 mat-stroked-button mat-button-base"><span class="mat-button-wrapper"><mat-icon role="img" class="mat-icon notranslate icon-size-5 mat-icon-no-color" aria-hidden="true" data-mat-icon-type="svg" data-mat-icon-name="github" data-mat-icon-namespace="feather"><svg x="1056" y="192" viewBox="0 0 24 24" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
-          <path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.36 3.36 0 00-.941-2.611l.001.001c3.14-.35 6.44-1.54 6.44-7a5.422 5.422 0 00-1.502-3.752L20 4.77a4.97 4.97 0 00.32-1.773c0-.722-.151-1.408-.423-2.03L19.91 1S18.73.65 16 2.48c-1.05-.296-2.255-.466-3.5-.466s-2.45.17-3.594.488L9 2.48C6.27.65 5.09 1 5.09 1a4.992 4.992 0 00-.41 1.997c0 .637.117 1.246.332 1.807L5 4.769A5.418 5.418 0 003.5 8.52v.03-.002c0 5.42 3.3 6.61 6.44 7a3.357 3.357 0 00-.939 2.591L9 18.128v3.87"></path>
-      </svg></mat-icon></span><span matripple="" class="mat-ripple mat-button-ripple"></span><span class="mat-button-focus-overlay"></span></button></div>
       </div>
-    </div>
   </div>
 </div>

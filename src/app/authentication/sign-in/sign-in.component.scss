@@ -196,3 +196,59 @@ width: 320px;
     --tw-border-opacity: 0.12!important;
 }
 
+.mat-form-field{
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    width: 100%!important;
+    font: 400 .875rem/1.2857142857 Inter var,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    letter-spacing: normal;
+    font: 400 .875rem/1.2857142857 Inter var,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    letter-spacing: normal;
+    --tw-border-opacity: 0.12!important;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    padding-bottom: 0;
+    position: relative;
+   
+}
+
+.mat-form-em{
+position: relative;
+    top: 20px;
+    margin-top: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: none;
+    font-weight: 500;
+    --tw-text-opacity: 1!important;
+    color: rgba(var(--fuse-text-default-rgb),var(--tw-text-opacity))!important;
+}
+
+.section-hr{
+    padding-left: 80px;
+    color: pink;
+
+}
+
+.sign-in-button{
+    border-radius: 30px;
+    top: 4px;
+    
+    padding: 5px 138px 5px 138px;
+}
+
+
+.hr-s{
+    margin-top: 2rem!important;
+    align-items: center!important;
+    display: flex!important;
+    --tw-border-opacity: 0.12!important;
+   
+}
+.button-icon{
+    border-radius: 10px;
+    top: 10px;
+}
+
+
