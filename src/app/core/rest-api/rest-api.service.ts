@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpParams, HttpHeaders, HttpClient, HttpResponseBase } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { IContext, IHeaders, IParameters } from './rest-api.models';
+import { IHeaders, IParameters } from './rest-api.models';
 
 @Injectable({
   providedIn: 'root',
