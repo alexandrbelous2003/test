@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormControl, FormGroup } from '@angular/forms';
+import { SignInFacadeService } from './sign-in.facade.service';
 
 
 @Component({
@@ -7,19 +8,22 @@ import { FormControl } from '@angular/forms';
   templateUrl: './sign-in.component.html',
   styleUrls: ['./sign-in.component.scss']
 })
-export class SignInComponent implements OnInit{
+export class SignInComponent {
 
+  public loginForm: FormGroup;
 
-
-
-  nameControl: FormControl = new FormControl;
-
-  ngOnInit(): void {
-    this.nameControl = new FormControl();
+  constructor(
+    private signInFacadeService: SignInFacadeService
+  ) {
+    this.loginForm = new FormGroup({
+      login: new FormControl(''),
+      password: new FormControl('')
+    });
   }
 
-
-  constructor() { }
+  public onSubmit(): void {
+    this.signInFacadeService.onSubmit(this.loginForm.value);
+  }
 
 }
 

@@ -7,6 +7,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
 
@@ -19,6 +20,7 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
   imports: [
     FlexLayoutModule,
     CommonModule,
+    ReactiveFormsModule,
     AuthenticationRoutingModule,
     AuthenticationMaterialModule
 

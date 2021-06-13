@@ -5,36 +5,45 @@
         <div class="menu-picture">
           <img src="http://angular-material.fusetheme.com/assets/images/logo/logo.svg">
         </div>
-        <div class="menu-up-text">
-          Sign in
-        </div>
-        <div class="menu-account-link">
-          <div class="flex-menu-account-link">Dont have account?</div>
-          <a class="flex-menu-account-link-href" href="/sign-up">Sign up</a>
-        </div>
-       
-        <div class="mat-form">
-         
-          <span class="mat-form-em" >Email address</span>
-          <mat-form-field appearance="outline">
-            <mat-label>Login</mat-label>
-            <input matInput placeholder="Placeholder">
-          </mat-form-field>
-
-          <span class="mat-form-em">Password</span>
-          <mat-form-field appearance="outline">
-            <mat-label>Password</mat-label>
-            <input matInput placeholder="Placeholder">
-          </mat-form-field>
+        <form 
+          [formGroup]="loginForm"
+          (ngSubmit)="onSubmit()"
+        >
+          <div class="menu-up-text">
+            Sign in
+          </div>
+          <div class="menu-account-link">
+            <div class="flex-menu-account-link">Dont have account?</div>
+            <a class="flex-menu-account-link-href" href="/sign-up">Sign up</a>
+          </div>
+        
+          <div class="mat-form">
           
-          <section class="example-section">
-            <mat-checkbox class="example-margin">Remember me</mat-checkbox>
-            <a class="section-hr" href="">Forgot password? </a>
-          </section>
-        <button mat-raised-button class="sign-in-button"  color="primary">Sign in</button>
+            <span class="mat-form-em" >Email address</span>
+            <mat-form-field appearance="outline">
+              <mat-label>Login</mat-label>
+              <input matInput placeholder="Placeholder">
+            </mat-form-field>
+
+            <span class="mat-form-em">Password</span>
+            <mat-form-field appearance="outline">
+              <mat-label>Password</mat-label>
+              <input matInput placeholder="Placeholder">
+            </mat-form-field>
+          </div>
+
+          
+            <section class="example-section">
+              <mat-checkbox class="example-margin">Remember me</mat-checkbox>
+              <a class="section-hr" href="">Forgot password? </a>
+            </section>
+          <button mat-raised-button class="sign-in-button"  color="primary" 	type="submit">Sign in</button>
+        </form>
+
+
         <hr class="hr-s">
         <div fxLayout fxLayoutAlign="space-between center">
-          <button mat-stroked-button class="button-icon">
+          <button mat-stroked-button class="button-icon" 	type="button">
             <mat-icon
               style='color: red'
               svgIcon='facebook'
@@ -42,7 +51,7 @@
               
             </mat-icon>
           </button>
-          <button mat-stroked-button class="button-icon">
+          <button mat-stroked-button class="button-icon" type="button">
             <mat-icon
             style='color: red'
             svgIcon='twitter'
@@ -50,7 +59,7 @@
             
           </mat-icon>
           </button>
-          <button mat-stroked-button class="button-icon">  <mat-icon
+          <button mat-stroked-button class="button-icon" type="button">  <mat-icon
             style='color: red'
             svgIcon='github'
           >
