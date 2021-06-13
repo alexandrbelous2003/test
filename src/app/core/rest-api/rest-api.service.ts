@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpParams, HttpHeaders, HttpClient, HttpResponseBase, HttpContext, HttpContextToken } from '@angular/common/http';
+import { HttpParams, HttpHeaders, HttpClient, HttpResponseBase } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { IContext, IHeaders, IParameters } from './rest-api.models';
 
