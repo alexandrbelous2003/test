@@ -11,7 +11,7 @@ export class AuthenticationService extends RestAPIService {
   }
 
   public onSignIn<PL, R>(payload: PL): Observable<R>{
-    const requestUrl = '/login';
+    const requestUrl = '/auth/login';
     const parameters = {};
     const headers = {};
     return this.postRequest<PL, R>(requestUrl, payload, parameters, headers);

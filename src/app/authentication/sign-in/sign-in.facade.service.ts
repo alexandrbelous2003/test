@@ -2,7 +2,6 @@ import { ISignInPayload, ISignInResponse } from '@air-authentication/authenticat
 import { AuthenticationService } from '@air-authentication/services/authentication.service';
 import { Injectable, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { tap } from 'rxjs/operators';
 
 @Injectable({ providedIn: 'root' })
 export class SignInFacadeService implements OnDestroy {
