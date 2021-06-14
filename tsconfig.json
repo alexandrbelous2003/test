@@ -5,6 +5,7 @@
     "baseUrl": "./",
     "paths": {
       "@air-authentication/*" : ["src/app/authentication/*"],
+      "@air-core/*" : ["src/app/core/*"],
     },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
