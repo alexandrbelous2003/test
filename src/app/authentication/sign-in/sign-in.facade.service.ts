@@ -1,4 +1,4 @@
-import { ISignInPayload } from '@air-authentication/models/authentication.models';
+import { ISignInPayload } from '@air-authentication/authentication.models';
 import { Injectable } from '@angular/core';
 
 @Injectable({ providedIn: 'root' })
