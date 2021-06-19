@@ -1,4 +1,90 @@
-<div class="head-fon">
+<div class="sign-in">
+  <div class="sign-in-content">
+    <div class="sign-in-content-icon">
+      <span><img src="http://angular-material.fusetheme.com/assets/images/logo/logo.svg"></span>
+     
+      
+    </div>
+    <div class="sign-in-content-upps">
+      <span>Sign in</span>
+
+    </div>
+    
+    <div class="sign-in-content-account">
+      <span>Dont have account?<a href="#">sign-up</a></span>
+
+    </div>
+    <div class="sign-in-content-email">
+      <span>Email address</span>
+            <mat-form-field appearance="outline">
+              <mat-label>Login</mat-label>
+              <input matInput placeholder="Placeholder" formControlName="login">
+            </mat-form-field>
+
+    </div>
+    <div class="sign-in-content-password">
+      <span>Password</span>
+      <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input matInput placeholder="Placeholder" formControlName="password">
+      </mat-form-field>
+    
+    </div>
+
+    <div class="sign-in-content-forgot">
+      <mat-checkbox class="example-margin">Remember me</mat-checkbox>
+      <a class="section-hr" href="">Forgot password? </a>
+
+    </div>
+
+    <div class="sign-in-content-signin">
+      <span> <button mat-raised-button  color="primary" 	type="submit">Sign in</button></span>
+    </div>
+
+    <div class="sign-in-content-brline">
+      <br>
+    </div>
+
+    <div class="sign-in-content-icons">
+      <button mat-stroked-button  	type="button">
+        <mat-icon
+          style='color: red'
+          svgIcon='facebook'
+        >
+          
+        </mat-icon>
+      </button>
+      <button mat-stroked-button  type="button">
+        <mat-icon
+        style='color: red'
+        svgIcon='twitter'
+      >
+        
+      </mat-icon>
+      </button>
+      <button mat-stroked-button  type="button">  <mat-icon
+        style='color: red'
+        svgIcon='github'
+      >
+        
+      </mat-icon>
+    </button>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="head-fon" *ngIf=false>
   <div class="head">
     <div class="header">
       <div class="menu">
