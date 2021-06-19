@@ -12,6 +12,7 @@ export class SvgIconsModule {
     this.addSvgIcon('facebook');
     this.addSvgIcon('twitter');
     this.addSvgIcon('github');
+    this.addSvgIcon('logo');
 
   }
 
