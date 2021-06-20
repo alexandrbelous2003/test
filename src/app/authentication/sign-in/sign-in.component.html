@@ -1,9 +1,9 @@
 <div class="sign-in">
-  <div class="sign-in-content">
+  <div class="sign-in-content mat-elevation-z3">
     <div class="sign-in-content-icon">
-      <span><mat-icon svgIcon='logo'>
+      <mat-icon svgIcon='logo'>
      </mat-icon>
-     </span>
+    
       
     </div>
 
@@ -12,42 +12,44 @@
 
     </div>
     
-    <div class="sign-in-content-account">
-      <span>Dont have account?<a href="#">sign-up</a></span>
+    <div class="sign-in-content-account" fxLayout="row" fxLayoutGap="4px">
+      <span>Dont have account?</span>
+      <a href="#">sign-up</a>
 
     </div>
-    <div class="sign-in-content-email">
+    <div fxLayout="column" class="sign-in-content-email">
       <span>Email address</span>
-            <mat-form-field appearance="outline">
-              <mat-label>Login</mat-label>
-              <input matInput placeholder="Placeholder" formControlName="login">
-            </mat-form-field>
-
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="Email">
+      </mat-form-field>
+    
     </div>
-    <div class="sign-in-content-password">
+    <div fxLayout="column" class="sign-in-content-password">
       <span>Password</span>
       <mat-form-field appearance="outline">
         <mat-label>Password</mat-label>
-        <input matInput placeholder="Placeholder" formControlName="password">
+        <input matInput  formControlName="password">
       </mat-form-field>
     
     </div>
 
-    <div class="sign-in-content-forgot">
+    <div class="sign-in-content-forgot" fxLayout="row" fxLayoutAlign="space-between center">
       <mat-checkbox class="example-margin">Remember me</mat-checkbox>
       <a class="section-hr" href="">Forgot password? </a>
 
     </div>
+    
 
     <div class="sign-in-content-signin">
-      <span> <button mat-raised-button  color="primary" 	type="submit">Sign in</button></span>
+      <button mat-raised-button  color="primary" type="submit">Sign in</button>
     </div>
 
-    <div class="sign-in-content-brline">
-      <br>
+    <div class="sign-in-content-hrline">
+      <hr>
     </div>
 
-    <div class="sign-in-content-icons">
+    <div class="sign-in-content-icons-1">
       <button mat-stroked-button  	type="button">
         <mat-icon
           
@@ -55,7 +57,11 @@
         >
           
         </mat-icon>
+        
       </button>
+      </div>
+
+      <div class="sign-in-content-icons-2">
       <button mat-stroked-button  type="button">
         <mat-icon
         
@@ -64,6 +70,9 @@
         
       </mat-icon>
       </button>
+      </div>
+
+    <div class="sign-in-content-icons-3">
       <button mat-stroked-button  type="button">  <mat-icon
         
         svgIcon='github'
@@ -74,87 +83,4 @@
     </div>
 
   </div>
-</div>ß
-
-
-
-
-
-
-
-
-
-
-
-<!-- <div class="head-fon" *ngIf=false>
-  <div class="head">
-    <div class="header">
-      <div class="menu">
-        <div class="menu-picture">
-          <img src="http://angular-material.fusetheme.com/assets/images/logo/logo.svg">
-        </div>
-        <form 
-          [formGroup]="loginForm"
-          (ngSubmit)="onSubmit()"
-        >
-          <div class="menu-up-text">
-            Sign in
-          </div>
-          <div class="menu-account-link">
-            <div class="flex-menu-account-link">Dont have account?</div>
-            <a class="flex-menu-account-link-href" href="/sign-up">Sign up</a>
-          </div>
-        
-          <div class="mat-form">
-          
-            <span class="mat-form-em" >Email address</span>
-            <mat-form-field appearance="outline">
-              <mat-label>Login</mat-label>
-              <input matInput placeholder="Placeholder" formControlName="login">
-            </mat-form-field>
-
-            <span class="mat-form-em">Password</span>
-            <mat-form-field appearance="outline">
-              <mat-label>Password</mat-label>
-              <input matInput placeholder="Placeholder" formControlName="password">
-            </mat-form-field>
-          </div>
-
-          
-            <section class="example-section">
-              <mat-checkbox class="example-margin">Remember me</mat-checkbox>
-              <a class="section-hr" href="">Forgot password? </a>
-            </section>
-          <button mat-raised-button class="sign-in-button"  color="primary" 	type="submit">Sign in</button>
-        </form>
-
-
-        <hr class="hr-s">
-        <div fxLayout fxLayoutAlign="space-between center">
-          <button mat-stroked-button class="button-icon" 	type="button">
-            <mat-icon
-              style='color: red'
-              svgIcon='facebook'
-            >
-              
-            </mat-icon>
-          </button>
-          <button mat-stroked-button class="button-icon" type="button">
-            <mat-icon
-            style='color: red'
-            svgIcon='twitter'
-          >
-            
-          </mat-icon>
-          </button>
-          <button mat-stroked-button class="button-icon" type="button">  <mat-icon
-            style='color: red'
-            svgIcon='github'
-          >
-            
-          </mat-icon>
-        </button>
-        </div>
-      </div>
-  </div>
-</div> -->
+</div>

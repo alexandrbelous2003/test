@@ -1,1 +1,70 @@
-<p>sign-up works!</p>
+<div class="sign-in">
+    <div class="sign-in-content mat-elevation-z3">
+      <div class="sign-in-content-icon">
+        <mat-icon svgIcon='logo'>
+       </mat-icon>
+      
+        
+      </div>
+  
+      <div class="sign-in-content-upps">
+        <span>Sign in</span>
+  
+      </div>
+      
+      <div class="sign-in-content-account" fxLayout="row" fxLayoutGap="4px">
+        <span>Already have an account?</span>
+        <a href="#">sign-in</a>
+  
+      </div>
+
+      <div fxLayout="column" class="sign-in-content-fullName">
+        <span>Full name</span>
+        <mat-form-field appearance="outline">
+          <mat-label>Full name</mat-label>
+          <input matInput >
+        </mat-form-field>
+      
+      </div>
+
+      <div fxLayout="column" class="sign-in-content-email">
+        <span>Email address</span>
+        <mat-form-field appearance="outline">
+          <mat-label>Email</mat-label>
+          <input matInput formControlName="Email">
+        </mat-form-field>
+      
+      </div>
+      <div fxLayout="column" class="sign-in-content-password">
+        <span>Password</span>
+        <mat-form-field appearance="outline">
+          <mat-label>Password</mat-label>
+          <input matInput  formControlName="password">
+        </mat-form-field>
+      
+      </div>
+
+      <div fxLayout="column" class="sign-in-content-company">
+        <span>Company</span>
+        <mat-form-field appearance="outline">
+          <mat-label>Company</mat-label>
+          <input matInput >
+        </mat-form-field>
+      
+      </div>
+  
+      <div class="sign-in-content-forgot" fxLayout="row" fxLayoutAlign="space-between center">
+        <mat-checkbox class="example-margin">Remember me</mat-checkbox>
+        <a class="section-hr" href="">Forgot password? </a>
+  
+      </div>
+      
+  
+      <div class="sign-in-content-signin">
+        <button mat-raised-button  color="primary" type="submit">Create free your account</button>
+      </div>
+  
+
+    </div>
+  </div>
+  
