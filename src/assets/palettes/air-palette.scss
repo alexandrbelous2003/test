@@ -1,0 +1,45 @@
+
+$dark-primary-text: #2B405F;
+$light-primary-text: white;
+
+$mat-air-grey: (
+  50: #FFFFFF,
+  contrast: (
+    50: $dark-primary-text,
+  )
+);
+
+$mat-air-blue: (
+  50:  #2B405F,
+  contrast: (
+    50: $light-primary-text,
+  )
+);
+
+$mat-air-red: (
+  50:  #E84E45,
+  contrast: (
+    50: $light-primary-text,
+  )
+);
+
+$mat-air-yellow: (
+  50:  #F1C599,
+  contrast: (
+    50: $light-primary-text,
+  )
+);
+
+$mat-air-green: (
+  50:  #8BD380,
+  contrast: (
+    50: $light-primary-text,
+  )
+);
+
+$mat-air-black: (
+  50: #000000,
+  contrast: (
+    50: $dark-primary-text,
+  )
+);

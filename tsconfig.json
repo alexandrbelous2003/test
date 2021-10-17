@@ -2,10 +2,10 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "./src",
     "paths": {
-      "@air-authentication/*" : ["src/app/authentication/*"],
-      "@air-core/*" : ["src/app/core/*"],
+      "@air-authentication/*" : ["app/authentication/*"],
+      "@air-core/*" : ["app/core/*"],
     },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,

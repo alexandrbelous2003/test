@@ -1,0 +1,47 @@
+@import "~@angular/material/theming";
+@include mat-core();
+@import "~assets/palettes/air-palette.scss";
+@import "../../app/authentication/sign-in/sign-in.component";
+
+
+
+
+
+
+
+$air-light-primary: mat-palette($mat-air-blue, 50);
+$air-light-accent: mat-palette($mat-air-grey, 50);
+$air-light-warn: mat-palette($mat-air-red, 50);
+$air-light-theme: mat-light-theme(
+  $air-light-primary,
+  $air-light-accent,
+  $air-light-warn
+);
+$background: map-get($air-light-theme, background);
+$background: map_merge(
+  $background,
+  (
+    background: mat-color(mat-palette($mat-air-grey, 50)),
+  )
+);
+$air-light-theme: map_merge(
+  $air-light-theme,
+  (
+    background: $background,
+  )
+);
+$foreground: map-get($air-light-theme, foreground);
+$foreground: map_merge(
+  $foreground,
+  (
+    text: mat-color(mat-palette($mat-air-blue, 50)),
+    divider: mat-color(mat-palette($mat-air-blue, 50)),
+  )
+);
+$air-light-theme: map_merge(
+  $air-light-theme,
+  (
+    foreground: $foreground,
+  )
+);
+@include sign-in-theme($air-light-theme);
