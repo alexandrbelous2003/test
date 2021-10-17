@@ -1,16 +1,19 @@
-import { ISignInPayload, ISignInResponse } from '@air-authentication/authentication.models';
 import { AuthenticationService } from '@air-authentication/services/authentication.service';
+import { ModuleFacadeService } from '@air-core/module-facade/module-facade.service';
 import { Injectable, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
-export class SignInFacadeService implements OnDestroy {
+export class SignInFacadeService extends ModuleFacadeService implements OnDestroy {
 
-  private subscription: Subscription;
+  protected _handleOnEventOccursFabric:( { [K: string]: IModuleFacadeFunction } ) = {
+    onSignInButtonClickEvent: this.onSignInButtonClickEvent
+  };
 
   constructor(
     private authenticationService: AuthenticationService,
   ) {
+    super();
     this.subscription = new Subscription();
   }
 
@@ -18,13 +21,13 @@ export class SignInFacadeService implements OnDestroy {
     this.subscription?.unsubscribe();
   }
 
-  public onSubmit(payload: ISignInPayload): void {
-    this.subscription
-      .add(
-        this.authenticationService.onSignIn<ISignInPayload, ISignInResponse>(payload)
-          .pipe()
-          .subscribe()
-      )
+  public onSignInButtonClickEvent (event: IEvent): void {
+    // this.subscription
+    //   .add(
+    //     this.authenticationService.onSignIn<ISignInPayload, ISignInResponse>(payload)
+    //       .pipe()
+    //       .subscribe()
+    //   )
   }
 
 }
